@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: a6f97a4fb90b8da48ab986d723ef4c96
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Barcode1Container
+    100002: Barcode2Container
+    100004: Barcode3Container
+    100006: DownArrow
+    100008: //RootNode
+    100010: UpArrow
+    100012: Barcode1ContainerHighlight
+    100014: Barcode2ContainerHighlight
+    100016: Barcode3ContainerHighlight
+    100018: DownArrowHighlight
+    100020: UpArrowHighlight
+    400000: Barcode1Container
+    400002: Barcode2Container
+    400004: Barcode3Container
+    400006: DownArrow
+    400008: //RootNode
+    400010: UpArrow
+    400012: Barcode1ContainerHighlight
+    400014: Barcode2ContainerHighlight
+    400016: Barcode3ContainerHighlight
+    400018: DownArrowHighlight
+    400020: UpArrowHighlight
+    2100000: No Name
+    2300000: Barcode1Container
+    2300002: Barcode2Container
+    2300004: Barcode3Container
+    2300006: DownArrow
+    2300008: UpArrow
+    2300010: Barcode1ContainerHighlight
+    2300012: Barcode2ContainerHighlight
+    2300014: Barcode3ContainerHighlight
+    2300016: DownArrowHighlight
+    2300018: UpArrowHighlight
+    3300000: Barcode1Container
+    3300002: Barcode2Container
+    3300004: Barcode3Container
+    3300006: DownArrow
+    3300008: UpArrow
+    3300010: Barcode1ContainerHighlight
+    3300012: Barcode2ContainerHighlight
+    3300014: Barcode3ContainerHighlight
+    3300016: DownArrowHighlight
+    3300018: UpArrowHighlight
+    4300000: Barcode1Container
+    4300002: Barcode2Container
+    4300004: Barcode3Container
+    4300006: UpArrow
+    4300008: DownArrow
+    4300010: Barcode1ContainerHighlight
+    4300012: Barcode2ContainerHighlight
+    4300014: Barcode3ContainerHighlight
+    4300016: UpArrowHighlight
+    4300018: DownArrowHighlight
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
