@@ -25,4 +25,4 @@ MonoBehaviour:
     [url=http://ktane.timwi.de/HTML/Barcode%20Cipher.html]Manual HTML[/url]'
   version: 1.0
   outputFolder: build
-  previewImage: {fileID: 2800000, guid: 926487e5cf73fa64db176e43ee1e27ff, type: 3}
+  previewImage: {fileID: 2800000, guid: a4578134392b60d4aab6a4170be26114, type: 3}
