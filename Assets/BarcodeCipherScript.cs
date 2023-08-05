@@ -80,17 +80,17 @@ public class BarcodeCipherScript : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             barcodeText[i].text = edgework[i].Name;
-            answerNumbers[i] = (edgework[i].Value*(numberSum) ^ numbers[i]) % (snLast % 5 + 5);
+            answerNumbers[i] = (edgework[i].Value * (numberSum) ^ numbers[i]) % (snLast % 5 + 5);
         }
 
         Debug.LogFormat("[Barcode Cipher #{0}] The first barcode is {1} so the number required is {2}.", _moduleId, edgework[0].Name, edgework[0].Value);
         Debug.LogFormat("[Barcode Cipher #{0}] The second barcode is {1} so the number required is {2}.", _moduleId, edgework[1].Name, edgework[1].Value);
         Debug.LogFormat("[Barcode Cipher #{0}] The third barcode is {1} so the number required is {2}.", _moduleId, edgework[2].Name, edgework[2].Value);
         Debug.LogFormat("[Barcode Cipher #{0}] The sum of the displayed number's digits is {1}.", _moduleId, numberSum);
-        Debug.LogFormat("[Barcode Cipher #{0}] The first barcode number × the sum of the 6-digit display = {1}.", _moduleId, edgework[0].Value*(numberSum));
+        Debug.LogFormat("[Barcode Cipher #{0}] The first barcode number × the sum of the 6-digit display = {1}.", _moduleId, edgework[0].Value * (numberSum));
         Debug.LogFormat("[Barcode Cipher #{0}] The second barcode number × the sum of the 6-digit display = {1}.", _moduleId, edgework[1].Value * (numberSum));
         Debug.LogFormat("[Barcode Cipher #{0}] The third barcode number × the sum of the 6-digit display = {1}.", _moduleId, edgework[2].Value * (numberSum));
-        Debug.LogFormat("[Barcode Cipher #{0}] First result after XOR = {1}.", _moduleId, edgework[0].Value * (numberSum)^numbers[0]);
+        Debug.LogFormat("[Barcode Cipher #{0}] First result after XOR = {1}.", _moduleId, edgework[0].Value * (numberSum) ^ numbers[0]);
         Debug.LogFormat("[Barcode Cipher #{0}] Second result after XOR = {1}.", _moduleId, edgework[1].Value * (numberSum) ^ numbers[1]);
         Debug.LogFormat("[Barcode Cipher #{0}] Third result after XOR = {1}.", _moduleId, edgework[2].Value * (numberSum) ^ numbers[2]);
         Debug.LogFormat("[Barcode Cipher #{0}] The first answer is {1}.", _moduleId, answerNumbers[0]);
@@ -220,15 +220,16 @@ public class BarcodeCipherScript : MonoBehaviour
             while (int.Parse(list[i]) > inputScreenNumber)
             {
                 UpArrow.OnInteract();
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(0.1f);
             }
             while (int.Parse(list[i]) < inputScreenNumber)
             {
                 DownArrow.OnInteract();
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(0.1f);
             }
 
             BarcodeButtons[i].OnInteract();
+            yield return new WaitForSeconds(0.25f);
         }
 
         yield return null;
@@ -238,18 +239,21 @@ public class BarcodeCipherScript : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
+            if (barcodesSolved[i])
+                continue;
             while (answerNumbers[i] > inputScreenNumber)
             {
                 UpArrow.OnInteract();
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(0.1f);
             }
             while (answerNumbers[i] < inputScreenNumber)
             {
                 DownArrow.OnInteract();
-                yield return new WaitForSeconds(0.25f);
+                yield return new WaitForSeconds(0.1f);
             }
 
             BarcodeButtons[i].OnInteract();
+            yield return new WaitForSeconds(0.25f);
         }
 
         yield return null;
